@@ -50,23 +50,23 @@ static layout_t layout PROGMEM = {
 // macro, unused,
        K,    nop,
 // left hand ...... ......... ......... ......... ......... ......... .........
-   caps     , F1      , F2     , F3     , F4     , F5 , F6   , 
-   esc   , quote   , comma  , period , p      , y  , home , 
+   esc     , F1      , F2     , F3     , F4     , F5 , F6   , 
+   tab   , quote   , comma  , period , p      , y  , home , 
    lpupo1l1 , a       , o      , e      , u      , i  , 
    lpupo2l2 , semicol , q      , j      , k      , x  , tab  , 
-   guiL     , arrowL  , arrowU , arrowD , arrowR , 
-                                                               bs     , del  , 
+   guiL     , arrowL  , arrowU , arrowD , altL , 
+                                                               tab     , end  , 
                                                                nop    , nop  , home , 
-                                                               shL2kcap, ctrlL, altL  , 
+                                                               shL2kcap, ctrlL, esc  , 
 // right hand ..... ......... ......... ......... ......... ......... .........
-            F7       , F8     , F9     , F10    , F11     , F12   , dash     , 
-            pageU    , f      , g      , c      , r       , l     , bs    , 
+            F7       , F8     , F9     , F10    , F11     , F12   , esc     , 
+            pageU    , f      , g      , c      , r       , l     , bs      , 
                        d,     h      , t      , n      , s       , dash  , 
-            pageD ,    b      , m      , w      , v       , z     , shR2kcap , 
-                                arrowL   , arrowD , arrowU , arrowR , guiR    , 
-   lpupo3l3,    enter,
-   tab,      nop,      nop,
-   enter,    bs,    space  ),
+            enter ,    b      , m      , w      , v       , z     , caps , 
+                                bs   , arrowD , arrowU , arrowR , guiR    , 
+   pageU,    pageD,
+   del,      nop,      nop,
+   bs ,    enter,    space  ),
 
 // ............................................................................
 
@@ -96,7 +96,7 @@ static layout_t layout PROGMEM = {
 // ............................................................................
 // ............................................................................
 
-    MATRIX_LAYER(  // layer 3 : symbols & number pad
+    MATRIX_LAYER(  // layer 2 : symbols & number pad
 // macro, unused,
        K,    nop,
 // left hand ...... ......... ......... ......... ......... ......... .........
